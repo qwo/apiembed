@@ -25,7 +25,9 @@
   },
   "scripts": {
     "test": "standard && mocha --reporter spec",
-    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha"
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "standard": {
     "ignore": [
@@ -49,7 +51,9 @@
     "httpsnippet": "latest",
     "jade": "^1.9.2",
     "morgan": "^1.5.2",
-    "standard": "^2.11.0",
-    "unirest": "^0.4.0"
-  }
+    "standard": "^6.0.0",
+    "unirest": "^0.4.0",
+    "snyk": "^1.104.2"
+  },
+  "snyk": true
 }
